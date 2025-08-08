@@ -10,7 +10,7 @@ import lawful from '../images/lawful.png';
 import osint from '../images/os.webp';
 // import leftImage from '../images/new.png';
 // import rightImage from '../images/data.png';
-import bgImage from '../images/image10.png';
+import bgImage from '../images/website.png';
 import circleImage from '../images/cc.png';
 // import demoVideo from '../images/video.mp4';
 
@@ -128,30 +128,18 @@ const HomePage = () => {
   return (
     <>
       <section>
-  <div className="hero-banner">
-    <h2 className="hero-heading">
-      Operational Intelligence Starts Here
-    </h2>
-
-    {/* <div className="banner-images">
-    <img src={leftImage} alt="Left Side" className="side-img" />
-
-   <div className="vertical-line"></div>
-     <div className="circle-wrapper">
-       <img src={circleImage} alt="Center Circle" className="circle-img" />
-     </div>
-
-     <img src={rightImage} alt="Right Side" className="side-img" />
-   </div> */}
-   <div className="image-container">
-         <img src={bgImage} alt="Background" className="background-image" />
-         <img src={circleImage} alt="Logo" className="center-logo" />
-       </div>
-  </div>
-  <h2 className="heros-heading">
-    AI-powered Intelligence Solutions for Every Critical Situation
-  </h2>
-</section>
+        <div className="hero-banner">
+          <h2 className="hero-heading">
+            Operational Intelligence Starts Here
+          </h2>
+          <div className="image-banner">
+      <img src={bgImage} alt="Banner" />
+    </div>
+          <h2 className="heros-heading">
+            AI-powered Intelligence Solutions for Every Critical Situation
+          </h2>
+        </div>
+      </section>
       <section>
         <div className="basics-section">
           <h2 className="section-title">Approaches we take to empower law enforcement</h2>
@@ -203,31 +191,31 @@ const HomePage = () => {
         </div>
       </section>
       <section className="services-section">
-  <h2 className="section-header">Products we offer</h2>
-  {services.map((service, index) => (
-    <div
-      className={`service-row ${index % 2 === 1 ? 'reverse bg-grey' : 'bg-white'}`}
-      key={index}
-    >
-      <div className="service-inner">
-        <div className="service-image-container">
-          <div className="icon-square-box">
-            <img src={service.icon} alt={service.title} />
+        <h2 className="section-header">Products we offer</h2>
+        {services.map((service, index) => (
+          <div
+            className={`service-row ${index % 2 === 1 ? 'reverse bg-grey' : 'bg-white'}`}
+            key={index}
+          >
+            <div className="service-inner">
+              <div className="service-image-container">
+                <div className="icon-square-box">
+                  <img src={service.icon} alt={service.title} />
+                </div>
+              </div>
+              <div className="service-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <ul>
+                  {service.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="service-content">
-          <h3>{service.title}</h3>
-          <p>{service.description}</p>
-          <ul>
-            {service.features.map((feature, i) => (
-              <li key={i}>{feature}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
-  ))}
-</section>
+        ))}
+      </section>
 
 
       <section className="about-section">

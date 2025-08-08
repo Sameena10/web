@@ -151,34 +151,6 @@
   font-family: "Noto Sans", Arial, sans-serif;
 }
 
-/* @media (max-width: 768px) {
-  .contact-title {
-    font-size: 22px;
-  }
-
-  .contact-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contact-form,
-  .contact-info {
-    width: 100%;
-    align-items: center;
-  }
-
-  .form-heading,
-  .info-title,
-  .info-desc {
-    text-align: center;
-  }
-
-  .form-button {
-    padding: 8px 24px;
-    font-size: 14px;
-  }
-} */
 @media (max-width: 768px) {
   .contact-title {
     font-size: 22px;
@@ -195,7 +167,7 @@
   .contact-info {
     width: 100%;
     align-items: center;
-    padding: 0 20px; /* added horizontal padding */
+    padding: 0 20px;
     box-sizing: border-box;
   }
 
