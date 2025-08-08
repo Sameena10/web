@@ -133,8 +133,8 @@ const HomePage = () => {
             Operational Intelligence Starts Here
           </h2>
           <div className="image-banner">
-      <img src={bgImage} alt="Banner" />
-    </div>
+            <img src={bgImage} alt="Banner" />
+          </div>
           <h2 className="heros-heading">
             AI-powered Intelligence Solutions for Every Critical Situation
           </h2>
@@ -191,13 +191,16 @@ const HomePage = () => {
         </div>
       </section>
       <section className="services-section">
-        <h2 className="section-header">Products we offer</h2>
+        <div className="service-header-wrapper">
+          <h2 className="section-header">Products we offer</h2>
+        </div>
         {services.map((service, index) => (
           <div
             className={`service-row ${index % 2 === 1 ? 'reverse bg-grey' : 'bg-white'}`}
             key={index}
           >
             <div className="service-inner">
+
               <div className="service-image-container">
                 <div className="icon-square-box">
                   <img src={service.icon} alt={service.title} />
@@ -216,8 +219,6 @@ const HomePage = () => {
           </div>
         ))}
       </section>
-
-
       <section className="about-section">
         <h2 className="about-title">About us</h2>
         <div className="about-content">

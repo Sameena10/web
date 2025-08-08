@@ -336,16 +336,23 @@
 }
 
 /* services we offer 2 */
+.service-header-wrapper {
+  width: 100%;
+  text-align: center;
+  background-color: #f0f0f0; 
+  padding: 40px  0 15px 0; 
+  margin: 0; 
+}
 .section-header {
   font-size: 25px;
   font-weight: 300;
-  margin-bottom: 30px;
-  color: #002244;
+  color: #003366;
   text-align: center;
   font-family: "Noto Sans", Arial, sans-serif;
   position: relative;
-  background-color: #f0f0f0;
-  padding: 25px;
+  background-color: transparent;
+  padding: 0 0 10px 0;  
+  margin: 0 0 10px 0;   
 }
 
 .section-header::after {
@@ -396,7 +403,6 @@
   margin-right: 0;
   margin-left: 40px;
 }
-
 .icon-square-box {
   width: 450px;
   height: 250px;
@@ -453,13 +459,11 @@
 }
 
 .bg-white {
-  background-color: #ffffff;
-  /* height: 320px; */
+  background-color: #f0f0f0; 
 }
 
 .bg-grey {
-  background-color: #f0f0f0;
-  /* height:320px; */
+  background-color: #ffffff; 
 }
 
 @media (max-width: 1024px) {
@@ -534,7 +538,7 @@
 /* About Section */
 .about-section {
   padding: 40px 0;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   text-align: center;
   font-family: "Noto Sans", Arial, sans-serif;
 }
@@ -577,7 +581,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   box-sizing: border-box;
 }
 
